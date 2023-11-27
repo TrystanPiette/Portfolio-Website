@@ -13,7 +13,6 @@ function App() {
 
 return (
   <>
-    <BrowserRouter basename="/Website-Portfolio">
       <TransitionGroup>
         <CSSTransition key={location.key} classNames="fade" timeout={600}>
           <Routes location={location}>
@@ -25,7 +24,6 @@ return (
           </Routes>
         </CSSTransition>
       </TransitionGroup>
-    </BrowserRouter>
   </>
 );
 }
