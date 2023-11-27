@@ -1,0 +1,50 @@
+$primary-color: #29A0B1;
+
+@import 'animate.css';
+
+@font-face {
+  font-family: 'Photograph Signature';
+  src: url('./assets/fonts/Photograph\ Signature.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'PaytoneOne';
+  src: url('./assets/fonts/PaytoneOne-Regular.ttf') format('woff2');
+}
+
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 800ms ease-in-out; 
+}
+
+
+.fade-enter::before,
+.fade-exit::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 60px; 
+  width: calc(100% - 60px); 
+  height: 100%;
+  background-color: #1E1E1E;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 800ms ease-in-out;
+}
+
+.fade-enter-active::before {
+  opacity: 1;
+}
