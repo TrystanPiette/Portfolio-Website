@@ -17,7 +17,7 @@ const Home = () => {
 
         <div className="text-zone">
           <h1>          
-            <span className='info'>BIENVENU AU PORTFOLIO DE </span><span className='name'>TRYSTAN PIETTE</span>
+            <span className='info'>BIENVENUE AU PORTFOLIO DE </span><span className='name'>TRYSTAN PIETTE</span>
           </h1>
 
           <h2>ÉTUDIANT EN INFORMATIQUE À L'UQTR</h2>
