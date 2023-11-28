@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio-Website/static/css/main.4ae611c4.css",
+    "main.css": "/Portfolio-Website/static/css/main.cb0ebc1f.css",
     "main.js": "/Portfolio-Website/static/js/main.c4efaa9b.js",
     "static/js/787.cf482a7c.chunk.js": "/Portfolio-Website/static/js/787.cf482a7c.chunk.js",
     "static/media/background-tp.png": "/Portfolio-Website/static/media/background-tp.924d95bb8de40209691f.png",
     "static/media/PaytoneOne-Regular.ttf": "/Portfolio-Website/static/media/PaytoneOne-Regular.49f0dd262b027f64630e.ttf",
     "static/media/Photograph Signature.ttf": "/Portfolio-Website/static/media/Photograph Signature.fd3e04eb226c510fbf36.ttf",
     "index.html": "/Portfolio-Website/index.html",
-    "main.4ae611c4.css.map": "/Portfolio-Website/static/css/main.4ae611c4.css.map",
+    "main.cb0ebc1f.css.map": "/Portfolio-Website/static/css/main.cb0ebc1f.css.map",
     "main.c4efaa9b.js.map": "/Portfolio-Website/static/js/main.c4efaa9b.js.map",
     "787.cf482a7c.chunk.js.map": "/Portfolio-Website/static/js/787.cf482a7c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ae611c4.css",
+    "static/css/main.cb0ebc1f.css",
     "static/js/main.c4efaa9b.js"
   ]
 }
