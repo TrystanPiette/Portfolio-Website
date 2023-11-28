@@ -49,6 +49,8 @@
             font-weight: 300;
             min-width: fit-content;
             animation: fadeIn 1s backwards, pulse 1s;
+            text-align: justify;
+            
             
             &:nth-of-type(1) {
                 animation-delay: 1.5s;
