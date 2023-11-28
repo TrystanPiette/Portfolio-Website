@@ -27,32 +27,8 @@ useEffect(() => {
 }, []);
     return (
         <div className='container about-page'>
-            <div className='text-zone'>
+            <div className='text-zone'>       
 
-                <div className='stage-cube-cont'>
-                    <div className='cubespinner'>
-                        <div className='face1'>
-                            <FontAwesomeIcon icon={faJs} color='#29A0B1' />
-                        </div>
-                        <div className='face2'>
-                            <FontAwesomeIcon icon={faJava} color="#FFFFFF " />    
-                        </div>
-                        <div className='face3'>
-                            <FontAwesomeIcon icon={faHtml5} color="#343434" />
-                        </div>
-                        <div className='face4'>
-                            <FontAwesomeIcon icon={faCss3} color="#29A0B1 " />
-                        </div>
-                        <div className='face5'>
-                            <FontAwesomeIcon icon={faPython} color="#FFFFFF" />
-                        </div>
-                        <div className='face6'>
-                            <FontAwesomeIcon icon={faReact} color='#343434' />
-                        </div>
-                    </div>
-                </div>
-
-                <div className='text-info'>
                 <h1>
                     <AnimatedLetters
                     letterClass={letterClass}
@@ -60,24 +36,45 @@ useEffect(() => {
                     idx={15}
                     />
                 </h1>
-                <p className='test'>Je suis un étudiant en informatique à l'UQTR puis je suis à la recherche d'un stage d'été afin d'obtenir l'opportunité de bonifier mes connaissances et d'apprendre.</p>
-                <p>Je suis déterminé, travaillant et ma nature plutôt curieuse m'influence à vouloir découvrir et de faire des recherches afin de perfectionner la solution au quel je fais face. Je travaille également bien en équipe et la communication est très importante selon moi. </p>
-                <p>Si je devais me défénir en une phrase ça serait que je suis un passioné de la technologie qui adore le sport, en revanche je suis vraiment motivié et j'ai beaucoup d'énergie à investir.
-                </p>
-                </div>
+                <p className='test'>Je suis un étudiant en informatique à l'UQTR à la recherche d'un stage d'été afin d'obtenir l'opportunité de bonifier mes connaissances et mes apprentissages.</p>
+                <p>Je suis déterminé, travaillant et persévérant. Ma nature plutôt curieuse m'influence à vouloir découvrir et faire des recherches afin de perfectionner la solution auquel je fais face. Je travaille également bien en équipe et la communication est très importante selon moi. </p>
+                <p>Si j'étais pour me défénir en une phrase, ça serait que je suis un passioné de la technologie tout en étant un grand sportif. En conclusion, je suis vraiment motivié et j'ai beaucoup d'énergie à investir envers votre entreprise.
+                </p> 
+                    <div className='icons-about'>
+                        <div className='icon1'>
+                            <FontAwesomeIcon icon={faJs} color='#29A0B1' />
+                        </div>
+                        <div className='icon2'>
+                            <FontAwesomeIcon icon={faJava} color="#FFFFFF " />    
+                        </div>
+                        <div className='icon3'>
+                            <FontAwesomeIcon icon={faHtml5} color="#343434" />
+                        </div>
+                        <div className='icon4'>
+                            <FontAwesomeIcon icon={faCss3} color="#29A0B1 " />
+                        </div>
+                        <div className='icon5'>
+                            <FontAwesomeIcon icon={faPython} color="#FFFFFF" />
+                        </div>
+                        <div className='icon6'>
+                            <FontAwesomeIcon icon={faReact} color='#343434' />
+                    </div>
+                </div>            
             </div>
-            
-          <img className='BGTP'
-              src={PhotoTP}
-              alt="Trystan Piette"
-            />
+          
+                <div className='about-wrap'>
+                    <img className='BGTP'
+                    src={PhotoTP}
+                    alt="Trystan Piette"
+                    />
+
+                    <img className='BGTP2'
+                    src={PhotoTP}
+                    alt="Trystan Piette Grey"
+                    />
+            </div>                   
         </div>
-
-        
-
-
     )
-
 }
 
 export default About

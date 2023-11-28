@@ -5,7 +5,6 @@ import './index.scss';
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
 
-
 const Contact = () => {
   
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -53,13 +52,13 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Nom" type="text" name="nom" required />
+                  <input placeholder="Nom, Prénom" type="text" name="user_name" required />
                 </li>
                 <li className="half">
-                  <input placeholder="Email" type="email" name="email" defaultValue="trystanpiette@gmail.com" required />
+                  <input placeholder="Votre Email" type="email" name="user_email" required />
                 </li>
                 <li>
-                  <input placeholder="Sujet" type="text" name="sujet" required />
+                  <input placeholder="Sujet" type="text" name="user_sujet" required />
                 </li>
                 <li>
                   <textarea placeholder="Message" name="message" required></textarea>

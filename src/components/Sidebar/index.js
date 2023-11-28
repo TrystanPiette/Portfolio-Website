@@ -9,12 +9,10 @@ import {
   faHome,
   faUser,
   faEnvelope,
-  //faSuitcase,
   faFile
 } from '@fortawesome/free-solid-svg-icons'
 
 import { Link, NavLink } from 'react-router-dom'
-
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -24,41 +22,27 @@ const Sidebar = () => {
   const handleClick = () => {
     console.log('Opening GitHub PDF:', githubPdfUrl);
 
-    // Open the GitHub PDF link in a new tab or window
     window.open(githubPdfUrl, '_blank');
   };
-
   
- /* <NavLink
-  activeclassname="active"
-  className="portfolio-link"
-  to="/portfolio"
-  onClick={() => setShowNav(false)}
->
-  <FontAwesomeIcon icon={faSuitcase} color="#FFFFFF" />
-</NavLink>
-*/
-
-
   return (
     <div className="nav-bar">
-      <Link 
+      <Link
         className="logo"
         to="/"
         onClick={() => setShowNav(false)}>
-          
-        
+
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
-        <NavLink 
+        <NavLink
           exact="true"
           activeclassname="active"
           to="/"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faHome} color="#FFFFFF" />
-          
+
         </NavLink>
-        <NavLink 
+        <NavLink
           activeclassname="active"
           className="about-link"
           to="/about"
@@ -74,7 +58,7 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#FFFFFF" />
         </NavLink>
-        
+
       </nav>
       <ul>
         <li>
@@ -103,11 +87,9 @@ const Sidebar = () => {
             />
           </a>
         </li>
-        
-        
-       
+
       </ul>
-       <FontAwesomeIcon
+      <FontAwesomeIcon
         onClick={handleClick}
         icon={faFile}
         color="#FFFFFF"
@@ -117,8 +99,6 @@ const Sidebar = () => {
       <h3 className=''>Resumé</h3>
     </div>
   )
-  
 }
-
 
 export default Sidebar

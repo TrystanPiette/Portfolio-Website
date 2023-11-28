@@ -1,4 +1,3 @@
-  /* Global styles for particles */
   $color-bg: #1E1E1E;
   $color-particle: #FFFFFF;
   $spacing: 2560px;
@@ -7,7 +6,6 @@
   $time-3: 480s;
   $time-4: 960s;
   
-  /* mixins */
   @function particles($max) {
     $val: 0px 0px $color-particle;
     @for $i from 1 through $max {
@@ -21,9 +19,8 @@
     border-radius: 50%;
   }
   
-  /* Component-specific styles */
   .container.home-page {
-    height: 100%; /* Set the height to 100% */
+    height: 100%; 
     position: relative;
   
     .page-bg,
@@ -55,18 +52,13 @@
     }
   
     .particle-1 {
-      animation: animParticle $time-1 linear infinite;
+      animation: animParticle $time-1 linear infinite alternate;
       @include particles(1000);
       height: 2px;
       width: 2px;
     }
   
-    /* Add styles for other particles here */
-  
     @keyframes animParticle {
-      from {
-        transform: translateY(0px);
-      }
       to {
         transform: translateY($spacing * -1);
       }
